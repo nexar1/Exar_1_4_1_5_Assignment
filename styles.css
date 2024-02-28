@@ -1,0 +1,238 @@
+/* Author: Nilo Exar */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+header {
+    background: linear-gradient(to bottom, #499bd2, white);
+    color: black;
+    display: flex;
+    align-items: center;
+}
+#logo img {
+width: 150px;
+height: auto;
+}
+
+h1 {
+    font-family: "Molle", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 5px;
+
+}
+
+nav {
+    margin-left: auto;
+}
+.header p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+padding: 10px 20px;
+    text-decoration: none;
+    background-color: white;
+    color: black
+}
+#maincontent {
+    display: flex;
+    flex-direction: column;
+}
+#intro {
+    padding-top: 12px;
+    padding-bottom: 36px;
+    flex: 1;
+}
+#intro h2 {
+    font-family: "Molle";
+    font-size: 1.5rem;
+}
+#intro p {
+    float: left;
+    width: calc(33.33% - 10px);
+}
+#img-grid {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+#img-grid img:first-child, #img-grid img:nth-child(2) {
+    width: calc(100% - 5px);
+}
+#img-grid img:nth-child(3) {
+    width: calc(100% - 10px);
+    clear: both;
+}
+#plan {
+    background-color: #F6D64A;
+    padding: 20px;
+}
+#plan h3 {
+    font-family: "Molle";
+    font-size: 1.5rem;
+}
+.plan-container {
+    border: 5px solid white;
+    border-radius: 8px;
+    background-color: #55BCD5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.plan-container section {
+    padding: 8px;
+}
+#testimonials {
+    padding: 20px;
+}
+#testimonials h3 {
+    font-family: "Molle";
+    font-size: 1.5rem;
+}
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+#about {
+    padding: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-color: #499BD2;
+}
+#about h3 {
+    font-family: "Molle";
+    font-size: 1.5rem;
+
+}
+.destination-container {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 20px; 
+    
+}
+.destination-container img {
+    width: 50%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+#contact h3 {
+    font-family: "Molle";
+    font-size: 1.5rem;
+    color: black;
+}
+
+#contact form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+#names {
+    grid-column: 1;
+}
+
+#nums {
+    grid-column: 2;
+}
+
+#selects {
+    grid-column: 3;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    border: 1px #9B26B0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    outline: #9B26B0;
+}
+
+select {
+    border: 2px #9B26B0;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    cursor: pointer;
+    width: auto;
+}
+
+input[type="submit"] {
+    border: 2px;
+    padding: 10px 20px;
+    background-color: #9B26B0;
+    color: white;
+    cursor: pointer;
+    width: auto;
+}
+
+.footer {
+    background-color: #EAEAEA;
+}
